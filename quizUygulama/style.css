@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #877f7f;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: #393e46;
+    padding: 20px;
+    width: 600px;
+    height: auto;
+    border-radius: 4px;
+    position: relative;
+}
+
+.container .header{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.container .header .time
+.container .header .title
+.container .header .count{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.container .timer{
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #877f7f;
+    top: 10px;
+}
+
+.container .body{
+    width: 100%;
+    color: #fff;
+}
+
+.container.body .question{
+    width: 100%;
+    padding: 20px;
+}
+
+.container .body .options{
+    height: 180px;
+}
+
+.container .body .options .option{
+    border: 2ps solid #877f7f;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.container .body .options .option:hover{
+    margin-left: 5px;
+    background-color: #877f7f;
+}
+
+.result{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    z-index: 99;
+    width: 400px;
+    height: 250px;
+}
+
+.result .result-header{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.result .result-stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 50px;
+    font-size: 18px;
+}
+
+.result .again{
+    width: 100px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
